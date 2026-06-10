@@ -57,7 +57,7 @@ a {
   background-repeat: no-repeat;
   color: #FFFFFF;
   text-align: center;
-  padding: 80px 0 280px 0; /* Alttaki pizza görsel boşluğu için padding artırıldı */
+  padding: 80px 0 280px 0; 
   position: relative;
 }
 
@@ -75,6 +75,8 @@ a {
 }
 
 .hero-title {
+    font-family: 'Roboto Condensed', cursive;
+
   font-size: 64px;
   font-weight: 700;
   line-height: 1.1;
@@ -260,6 +262,14 @@ a {
 }
 
 /* PRODUCTS GRID */
+
+.lezzetus-title {
+    font-family: 'Quattrocento', serif;
+    font-weight: 700; 
+    font-size: 2rem; 
+    line-height: 1.2;
+}
+
 .products-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
