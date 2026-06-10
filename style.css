@@ -56,15 +56,22 @@ a {
   background-position: center;
   background-repeat: no-repeat;
   color: #FFFFFF;
-  text-align: center;
+  text-align: center; /* İçindeki metinleri ve inline elemanları (img, a) ortalar */
   padding: 80px 0 280px 0; 
   position: relative;
 }
 
-.hero .logo {
-  font-size: 36px;
-  font-weight: 700;
-  margin-bottom: 50px;
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-container img {
+  width: 450px;      
+  height: auto;       
+  margin-bottom: 50px; 
 }
 
 .hero-subtitle {
@@ -75,15 +82,13 @@ a {
 }
 
 .hero-title {
-    font-family: 'Roboto Condensed', cursive;
-
+  font-family: 'Roboto Condensed', sans-serif; /* Küçük bir düzeltme: Roboto Condensed genellikle sans-serif'tir */
   font-size: 64px;
   font-weight: 700;
   line-height: 1.1;
   letter-spacing: 1px;
   margin-bottom: 30px;
 }
-
 /* TOP NAV CATEGORIES */
 .top-nav-categories {
   background-color: #FFFFFF;
@@ -324,10 +329,13 @@ a {
 }
 
 /* FOOTER */
+
 .footer {
   background-color: #1A1A1A;
   color: #FFFFFF;
   padding: 60px 0 20px 0;
+  font-family: 'Barlow', sans-serif;
+
 }
 
 .footer-grid {
@@ -339,10 +347,13 @@ a {
 }
 
 .footer-logo {
-  font-size: 32px;
-  font-weight: 700;
-  line-height: 1.1;
   margin-bottom: 30px;
+}
+
+.footer-logo img {
+  width: 200px;  
+  height: auto;  
+  display: block; 
 }
 
 .contact-list {
